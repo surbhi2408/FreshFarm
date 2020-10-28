@@ -31,8 +31,8 @@ class ProductItem extends StatelessWidget {
             fit: BoxFit.scaleDown,
           ),
         ),
-        footer: GridTileBar(
-          backgroundColor: Colors.black87,
+
+        header: GridTileBar(
           leading: Consumer<Product>(
             builder: (ctx, product, _) => IconButton(
               icon: Icon(product.isFavorite ? Icons.favorite : Icons.favorite_border),
@@ -43,6 +43,20 @@ class ProductItem extends StatelessWidget {
             ),
             //child: Text("Never changes!"),
           ),
+        ),
+
+        footer: GridTileBar(
+          backgroundColor: Colors.black87,
+          // leading: Consumer<Product>(
+          //   builder: (ctx, product, _) => IconButton(
+          //     icon: Icon(product.isFavorite ? Icons.favorite : Icons.favorite_border),
+          //     color: Colors.red,
+          //     onPressed: () {
+          //       product.toggleFavoriteStatus();
+          //     },
+          //   ),
+          //   //child: Text("Never changes!"),
+          // ),
           title: Text(
             product.title,
             textAlign: TextAlign.center,
