@@ -96,7 +96,11 @@ class Products with ChangeNotifier {
     // ),
   ];
 
-  var _showFavoritesOnly = false;
+  //var _showFavoritesOnly = false;
+
+  final String authToken;
+
+  Products(this.authToken, this._items);
 
   List<Product> get items {
     // if(_showFavoritesOnly){
@@ -124,7 +128,8 @@ class Products with ChangeNotifier {
   // }
 
   Future<void> fetchAndSetProducts() async{
-    const url = 'https://shopapp-e1a4e.firebaseio.com/products.json';
+    // this will be now runtime constant after adding idToken i.e. changing const to final
+    final url = 'https://shopapp-e1a4e.firebaseio.com/products.json?auth=$authToken';
     try{
       final response = await http.get(url);
       // print(json.decode(response.body));
