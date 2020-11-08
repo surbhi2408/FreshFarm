@@ -75,11 +75,19 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
             icon: Icon(Icons.more_vert),
             itemBuilder: (_) => [
               PopupMenuItem(
-                child: Text('Favorites'),
+                // child: Text('Favorites'),
+                child: ListTile(
+                  leading: Icon(Icons.favorite),
+                  title: Text('Favorite'),
+                ),
                 value: FilterOptions.Favorites,
               ),
               PopupMenuItem(
-                child: Text('Home'),
+                // child: Text('Home'),
+                child: ListTile(
+                  leading: Icon(Icons.home),
+                  title: Text('Home'),
+                ),
                 value: FilterOptions.All,
               ),
             ],
