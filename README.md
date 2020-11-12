@@ -1,16 +1,15 @@
-# shop_app
+# FreshFarm
 
-A new Flutter application.
+A Groceries App where user can place order and add items to their wishlist. The market is one tap away from you.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+i. Removing Items From Cart.
+ii. Placing Order.
+iii. Alert Dialog Box for each operation performed in app to make effective experience for user.
+iv. User can view details of Item Ordered
+v. User can add item.
+vi. Validating Items whether item belongs to user or not.
+vii. User can Update Items.
+viii. Deleting Items.
+ix. SnackBar to Notify Deleted Items and ordered items too.
